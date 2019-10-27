@@ -21,8 +21,9 @@ weatherForm.addEventListener('submit', (e)=>{
             return console.log(data.error)
             
         }
-        messageOne.textContent = data.ActualLocation 
-        messageTwo.textContent = data.forecast
+        messageOne.textContent = data.ActualLocation + ". This place is located at Latitude : " + data.Latitude + " and Longitude : " + data.Longtitude
+        messageTwo.textContent = data.forecast + data.
+        
         console.log(data.forecast)
         
 })})
