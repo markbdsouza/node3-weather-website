@@ -10,7 +10,7 @@ const forecast = (lat, lon, callback) =>  {
     }
     else {
     const data = body.currently
-    callback(undefined, body.daily.summary + ". It is currently " + data.temperature + " degrees and there is " + data.precipIntensity +" probablity of rain ")
+    callback(undefined, "It is currently " + data.temperature + " degrees and there is " + data.precipIntensity +" probablity of rain. " + body.daily.summary + ". ")
     }
 })
 }
